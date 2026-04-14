@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'tailwindcss';
+@import "primeicons/primeicons.css";
+
+@config "../tailwind.config.js";
+
+.custom-icon-mega{
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+
+  background-image: url('https://mega.io/wp-content/themes/megapages/megalib/icons/logos/mega.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,36 @@
+<div class="h-full flex flex-col">
+
+  <p-table
+    [value]="products"
+    [scrollable]="true"
+    [rows]="10"
+    [paginator]="true"
+    [rowsPerPageOptions]="[10, 20, 30]"
+    scrollHeight="flex"
+    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+    stripedRows
+    class="flex-1 flex flex-col overflow-hidden"
+    [tableStyle]="{ 'min-width': '50rem' }"
+  >
+
+    <ng-template #header>
+      <tr>
+        <th class="bg-surface-900 text-surface-50">Code</th>
+        <th class="bg-surface-900 text-surface-50">Name</th>
+        <th class="bg-surface-900 text-surface-50">Category</th>
+        <th class="bg-surface-900 text-surface-50">Quantity</th>
+      </tr>
+    </ng-template>
+
+    <ng-template #body let-product>
+      <tr>
+        <td>{{ product.code }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.category }}</td>
+        <td>{{ product.quantity }}</td>
+      </tr>
+    </ng-template>
+
+  </p-table>
+
+</div>
