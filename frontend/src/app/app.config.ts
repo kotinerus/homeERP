@@ -1,9 +1,14 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
+import {
+  ApplicationConfig,
+  // provideBrowserGlobalErrorListeners, // Zostaw to tylko, jeśli używasz niestandardowego patcha/własnej paczki. Standardowo używa się ErrorHandler.
+} from '@angular/core';
 import { provideRouter } from '@angular/router';
+import { provideHttpClient } from '@angular/common/http';
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeuix/themes/aura';
 import { definePreset } from '@primeuix/themes';
-
+import { provideTranslateService } from '@ngx-translate/core';
+import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 import { routes } from './app.routes';
 
 const NoirPreset = definePreset(Aura, {
@@ -43,8 +48,16 @@ const NoirPreset = definePreset(Aura, {
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideBrowserGlobalErrorListeners(),
     provideRouter(routes),
+    provideHttpClient(),
+
+    provideTranslateService({
+      loader: provideTranslateHttpLoader({
+        prefix: './i18n/',
+        suffix: '.json',
+      }),
+    }),
+
     providePrimeNG({
       theme: {
         preset: NoirPreset,

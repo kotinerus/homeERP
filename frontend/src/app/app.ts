@@ -1,12 +1,11 @@
 import { Component, signal } from '@angular/core';
 
-import { MenuItem, PrimeIcons } from 'primeng/api';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
-import {SidebarPanel} from './sidebar-panel/sidebar-panel';
-
+import { SidebarPanel } from './sidebar-panel/sidebar-panel';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -14,54 +13,8 @@ import {SidebarPanel} from './sidebar-panel/sidebar-panel';
   templateUrl: './app.html',
 })
 export class App {
-  items!: MenuItem[];
-
-  ngOnInit() {
-    this.items = [
-      {
-        label: 'Magazyn',
-        icon: 'pi pi-box',
-        items: [
-          {
-            label: 'Produkty spożywcze',
-            icon: 'pi pi-cherry',
-          },
-        ],
-      },
-      {
-        label: 'Finanse',
-        icon: 'pi pi-receipt',
-        items: [
-          {
-            label: 'Zakupy',
-            icon: 'pi pi-shopping-cart',
-          },
-        ],
-      },
-      {
-        label: 'Dokumenty',
-        icon: 'pi pi-file',
-        items: [
-          {
-            label: 'Faktury',
-            icon: 'pi pi-file-pdf',
-          },
-        ],
-      },
-      {
-        label: 'Inne',
-        icon: 'pi pi-ellipsis-h',
-        items: [
-          {
-            label: 'Samochód',
-            icon: 'pi pi-car',
-          },
-          {
-            label: 'MEGA',
-            icon: 'custom-icon-mega',
-          },
-        ],
-      },
-    ];
+  constructor(private readonly translate: TranslateService) {
+    this.translate.addLangs(['pl', 'en']);
+    this.translate.use('pl');
   }
 }

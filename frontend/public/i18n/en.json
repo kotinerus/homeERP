@@ -1,0 +1,34 @@
+{
+  "sidebar": {
+    "assets": {
+      "title": "Assets",
+      "stock": "Warehouse",
+      "products": "Products",
+      "shopping_list": "Shopping list",
+      "wishlist": "Wishlist"
+    },
+    "finances": {
+      "title": "Finances",
+      "budget": "Budget",
+      "financial_report": "Financial report",
+      "recurring_payments": "Recurring payments",
+      "price_history": "Price history"
+    },
+    "documents": {
+      "title": "Documents",
+      "invoices": "Invoices",
+      "contracts": "Contracts",
+      "other": "Other"
+    },
+    "community": {
+      "title": "Community",
+      "friends": "Friends",
+      "groups": "Groups"
+    },
+    "other": {
+      "title": "Other",
+      "car": "Car",
+      "mega": "MEGA"
+    }
+  }
+}

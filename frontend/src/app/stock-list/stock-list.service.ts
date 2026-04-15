@@ -11,8 +11,8 @@ export interface Product {
 @Injectable({
   providedIn: 'root',
 })
-export class ProductsService {
-  getProducts(): Observable<Product[]>{
+export class StockListService {
+  getProducts(): Observable<Product[]> {
     return of(this.products);
   }
 
@@ -37,5 +37,6 @@ export class ProductsService {
     { code: 'BIU-002', name: 'Czarny tusz do drukarki', category: 'Biuro', quantity: 2 },
     { code: 'ZWI-001', name: 'Karma dla psa 15kg', category: 'Dla zwierząt', quantity: 1 },
     { code: 'ZWI-002', name: 'Żwirek dla kota', category: 'Dla zwierząt', quantity: 2 },
+    { code: 'ZWI-003', name: 'Maty dla psa', category: 'Dla zwierząt', quantity: 2 },
   ];
 }

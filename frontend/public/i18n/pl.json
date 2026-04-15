@@ -1,0 +1,35 @@
+{
+  "sidebar": {
+    "assets": {
+      "title": "Zasoby",
+      "stock": "Magazyn",
+      "products": "Produkty",
+      "shopping_list": "Lista zakupów",
+      "wishlist": "Lista życzeń"
+    },
+
+    "finances": {
+      "title": "Finanse",
+      "budget": "Budżet",
+      "financial_report": "Raport finansowy",
+      "recurring_payments": "Płatności cykliczne",
+      "price_history": "Historia cen"
+    },
+    "documents": {
+      "title": "Dokumenty",
+      "invoices": "Faktury",
+      "contracts": "Umowy",
+      "other": "Inne"
+    },
+    "community": {
+      "title": "Społeczność",
+      "friends": "Znajomi",
+      "groups": "Grupy"
+    },
+    "other": {
+      "title": "Inne",
+      "car": "Samochód",
+      "mega": "MEGA"
+    }
+  }
+}

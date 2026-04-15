@@ -3,17 +3,20 @@
   <p-table
     [value]="products"
     [scrollable]="true"
-    [rows]="10"
+    [rows]=rows
     [paginator]="true"
-    [rowsPerPageOptions]="[10, 20, 30]"
-    scrollHeight="flex"
-    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
-    stripedRows
-    class="flex-1 flex flex-col overflow-hidden"
+    [rowsPerPageOptions]=rowsPerPageOptions
+    [showCurrentPageReport]="true"
+    [first]="first"
     [tableStyle]="{ 'min-width': '50rem' }"
+    (onPage)="pageChange($event)"
+    scrollHeight="flex"
+    currentPageReportTemplate="Rekordy od {first} do {last} z {totalRecords}"
+    stripedRows
+    class="flex-1 flex flex-col overflow-hidden [&_.p-paginator]:justify-end!"
   >
 
-    <ng-template #header>
+    <ng-template pTemplate="header" >
       <tr>
         <th class="bg-surface-900 text-surface-50">Code</th>
         <th class="bg-surface-900 text-surface-50">Name</th>
@@ -22,7 +25,7 @@
       </tr>
     </ng-template>
 
-    <ng-template #body let-product>
+    <ng-template pTemplate="body" let-product>
       <tr>
         <td>{{ product.code }}</td>
         <td>{{ product.name }}</td>
