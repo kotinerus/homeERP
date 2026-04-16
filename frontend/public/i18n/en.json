@@ -30,5 +30,63 @@
       "car": "Car",
       "mega": "MEGA"
     }
+  },
+  "units": {
+    "piece": {
+      "short": "pc.",
+      "long": "piece"
+    },
+    "package": {
+      "short": "pkg.",
+      "long": "package"
+    },
+    "multipack": {
+      "short": "pk.",
+      "long": "multipack"
+    },
+    "set": {
+      "short": "set",
+      "long": "set"
+    },
+    "roll": {
+      "short": "roll",
+      "long": "roll"
+    },
+    "pair": {
+      "short": "pr.",
+      "long": "pair"
+    },
+    "gram": {
+      "short": "g",
+      "long": "gram"
+    },
+    "kilogram": {
+      "short": "kg",
+      "long": "kilogram"
+    },
+    "milligram": {
+      "short": "mg",
+      "long": "milligram"
+    },
+    "milliliter": {
+      "short": "ml",
+      "long": "milliliter"
+    },
+    "liter": {
+      "short": "l",
+      "long": "liter"
+    },
+    "meter": {
+      "short": "m",
+      "long": "meter"
+    },
+    "centimeter": {
+      "short": "cm",
+      "long": "centimeter"
+    },
+    "millimeter": {
+      "short": "mm",
+      "long": "millimeter"
+    }
   }
 }

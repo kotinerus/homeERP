@@ -31,5 +31,63 @@
       "car": "Samochód",
       "mega": "MEGA"
     }
+  },
+  "units": {
+    "piece": {
+      "short": "szt.",
+      "long": "sztuka"
+    },
+    "package": {
+      "short": "opak.",
+      "long": "opakowanie"
+    },
+    "multipack": {
+      "short": "zgrz.",
+      "long": "zgrzewka"
+    },
+    "set": {
+      "short": "kpl.",
+      "long": "komplet"
+    },
+    "roll": {
+      "short": "rolka",
+      "long": "rolka"
+    },
+    "pair": {
+      "short": "para",
+      "long": "para"
+    },
+    "gram": {
+      "short": "g",
+      "long": "gram"
+    },
+    "kilogram": {
+      "short": "kg",
+      "long": "kilogram"
+    },
+    "milligram": {
+      "short": "mg",
+      "long": "miligram"
+    },
+    "milliliter": {
+      "short": "ml",
+      "long": "mililitr"
+    },
+    "liter": {
+      "short": "l",
+      "long": "litr"
+    },
+    "meter": {
+      "short": "m",
+      "long": "metr"
+    },
+    "centimeter": {
+      "short": "cm",
+      "long": "centymetr"
+    },
+    "millimeter": {
+      "short": "mm",
+      "long": "milimetr"
+    }
   }
 }
